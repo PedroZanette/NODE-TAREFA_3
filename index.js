@@ -14,6 +14,17 @@ app.use('/sobre', (req, res) => {
 
 })
 
+app.use(
+    express.urlencoded({
+        extended: true,
+    }),
+)
+
+app.use(express.json());
+
+//arquivos estáticos
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
     res.sendFile(`${basepath}/index.html`);
 
@@ -22,7 +33,6 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`App não explodiu "ainda"!\nPorta: ${port}`)
 });
-
 
 const checkAuth = function (req, res, next) { //autentificação de usuário
     req.authStatus = true;
