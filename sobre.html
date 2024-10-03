@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    
+</head>
+
+<body>
+    <h1>Um texto sobre uma coisa que eu gosto. Bom eu curto bastante beatbox que é
+        fazer som com a boca e eu acho mto top!
+    </h1>
+    <h2>Segue o exemplo de beatbox:</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5uDZBxBJf2Y?si=sUg_-L-evy8kQUGK"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <button onclick="irPara()">Ir para a paginá anterior</button>
+
+</body>
+
+<script>
+    function irPara() {
+        window.location.href = './'
+    }
+</script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #263f26;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+</html>
